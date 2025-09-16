@@ -1,0 +1,48 @@
+package principal;
+
+import trabalhoMusica.Animal;
+import trabalhoMusica.Cachorro;
+import trabalhoMusica.Chick;
+import trabalhoMusica.Galinha;
+import trabalhoMusica.Galo;
+import trabalhoMusica.Gato;
+
+public class Principal {
+	
+public static void main(String[]args) {	
+
+	Animal chick = new Chick(null, null);
+	int flag = 6;
+	chick.emitirSom(flag);
+	
+	Galo galo = new Galo(null,null);
+	galo.emitirSom();
+	System.out.println(galo.Tostring());
+	chick.emitirSom(flag-1);
+	
+	Galinha galinha = new Galinha(null, null);
+	galinha.emitirSom();
+	System.out.println(galinha.Tostring());
+	
+	System.out.println(galo.Tostring());
+	chick.emitirSom(flag-2);
+	
+	Cachorro cachorro = new Cachorro();
+	cachorro.emitirSom();
+	System.out.println(cachorro.Tostring());
+
+	System.out.println(galinha.Tostring());
+	System.out.println(galo.Tostring());
+	chick.emitirSom(flag-2);
+
+	Gato gato = new Gato();
+	gato.emitirSom();
+	System.out.println(gato.Tostring());
+	
+	System.out.println(cachorro.Tostring());
+	System.out.println(galinha.Tostring());
+	System.out.println(galo.Tostring());
+	chick.emitirSom(flag-2);
+}
+ 
+}
